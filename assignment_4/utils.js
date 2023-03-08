@@ -14,13 +14,13 @@ module.exports.comparePassword = (password, hash) => {
 }
 
 module.exports.getJWTToken = (account) => {
-    const userData = { userId: accound.id, username: account.username }
+    const userData = { userId: account.id, username: account.username }
     const accessToken = jwt.sign(userData, JWT_SECRET)
     return accessToken
 }
 
 module.exports.verifyJWT = (token) => {
-    return jwt.verify(token)
+    return jwt.verify(token, JWT_SECRET)
 }
 
 module.exports.decodeJWT = (token) => {

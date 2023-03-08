@@ -4,7 +4,8 @@ const utils = require('./utils')
 
 const app = express();
 
-app.use(express.json())
+app.use(express.urlencoded())
+
 
 app.use((req, res, next) => {
     const token = req.headers.authorization
@@ -24,6 +25,7 @@ app.use((req, res, next) => {
 // Force login middleware
 
 const forceAuthorize = (req, res, next) => {
+    console.log(req.headers.authorization)
     if (req.user.isLoggedIn) {
         next()
     } else {
