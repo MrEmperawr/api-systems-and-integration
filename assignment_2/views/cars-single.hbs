@@ -1,0 +1,12 @@
+<h2>{{make}} {{model}}</h2>
+
+<form action="/cars/{{id}}/update" method="post">
+    <input type="text" name="make" placeholder="Make" value="{{make}}"> <br>
+    <input type="text" name="model" placeholder="Model" value="{{model}}"> <br>
+
+    <input type="submit" value="Save">
+</form>
+
+<form action="/cars/{{id}}/delete" method="post">
+    <input type="submit" value="Delete">
+</form>

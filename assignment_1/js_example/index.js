@@ -1,5 +1,5 @@
 // Imported from node_modules
-const expresss = require('express')
+const express = require('express')
 
 //Imported from this directory - namely the cars.js file
 const cars = require('./cars');
@@ -21,12 +21,6 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.send("Cars")
-})
-
-// Start the server
-
-app.listen(8000, () => {
-    console.log("http://localhost:8000")
 })
 
 // Set up cars route to serve all cars
@@ -65,4 +59,10 @@ app.post('/cars', (req, res) => {
     cars.push(newCar)
 
     res.send(id)
+})
+
+// Start the server
+
+app.listen(8008, () => {
+    console.log("http://localhost:8008")
 })

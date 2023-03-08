@@ -1,0 +1,18 @@
+<h2>Cars</h2>
+
+{{#each cars}}
+    <p>
+        <a href="/cars/{{id}}">{{make}} {{model}}</a>
+    </p>
+{{/each}}
+
+<hr>
+
+<h2>Create car</h2>
+
+<form action="/new-car" method="post">
+    <input type="text" name="make" placeholder="Make"> <br>
+    <input type="text" name="model" placeholder="Model"> <br>
+
+    <input type="submit" value="Save">
+</form>
