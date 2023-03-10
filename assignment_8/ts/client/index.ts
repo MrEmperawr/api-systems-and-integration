@@ -1,0 +1,1 @@
+import { getProducts } from "./axios-api-caller";
