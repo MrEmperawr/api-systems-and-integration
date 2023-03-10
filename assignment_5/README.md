@@ -22,5 +22,6 @@ Som vi gick igenom under lektion 5 så finns det många dåliga sätt att bygga 
 Än så länge är våra API-er ganska små och enkla att hantera men nu ska vi öva på att implementera god projektstruktur samtidigt som vi löser uppgiften där ovan.
 
 Här finns repot som vi kikade på under lektion 5: https://github.com/geshan/expressjs-structure/blob/master/index.js
+Ert repo behöver inte vara likadant men dela upp det i controllers, routes, och services allra minst. Om ni skapar många middlewares så bör ni ha en katalog (directory) för det.
 
 Fundera och diskutera i din mobb (eller med andra) varför man bör göra så här eller liknande sätt.
