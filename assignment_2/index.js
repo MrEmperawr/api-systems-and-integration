@@ -6,6 +6,8 @@ const carsData = require('./data/cars.js')
 
 const app = express()
 
+// Set up handlebars
+
 app.engine('hbs', exphbs.engine({
     extname: '.hbs',
     defaultLayout: 'main'

@@ -46,8 +46,6 @@ app.get('/cars/:id', (req, res) => {
     } else {
         res.sendStatus(404)
     }
-
-
 })
 
 app.post('/cars', (req, res) => {

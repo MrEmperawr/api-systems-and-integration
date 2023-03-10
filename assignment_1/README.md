@@ -9,7 +9,7 @@ Innan du börjar jobba så kör `npm i` när du står i `assignment_1`
 När du bildat dig en uppfattnig om vad som sker ska du göra följande:
 
 1. Lägg till en ny fil med namn "books.ts" i `ts`
-2. Skapa ett interface som hete `IBook` som innehåller `ISBN` som string, `id` som number samt `title` som string
+2. Skapa ett interface som heter `IBook` som innehåller `ISBN` som string, `id` som number samt `title` som string
 3. Se till att ditt interface exporteras
 4. Skapa en array med books vars items har typen IBook och exportera den
 5. Importera `books` och `IBook` i index.ts
