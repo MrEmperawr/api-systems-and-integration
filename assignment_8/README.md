@@ -1,7 +1,10 @@
 # Övningsuppgift 8
 
-1. Skriv av koden som sparat produkter i presentationen 8. Systemstöd och integration - Klient &
-Server.
+Nu ska vi bygga ett helt eget API som server kunder och en klient som pratar med vårt API.
+
+Ni ska skapa en klient och en server som kan prata med varandra. Detta repo är förhållandevis tomt så ni kommer behöva fylla det med bra kod som ni strukturer fint enligt våra principer kring ***Separation of Concerns***.
+
+1. Titta igenom uppgiftens katalog och undersök projektstrukturen. Det är koden vi tittade på i lektion 8.
 2. Lägg till funktionalitet för att spara kunder i samma API som i steg 1.
     - Kunder har följande properties:
         i. Id (number)

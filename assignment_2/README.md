@@ -10,6 +10,10 @@
 6. Skapa en helt ny katalog som heter `ts_example` och gör om projektet så det blir i ts-format ***se nedan för hur man lägger till ts till ett projekt
 7. Gör klart tidigare uppgifter om du inte redan gjort det
 
+### Extra
+
+Istället för handlebars så kan du/ni skriva en React-client som renderar innehållet. Skapa en katalog (directory) som heter `client` och skriv er react-kod där.
+
 När du vill köra ditt program så kör kommandot `nodemon` i roten av `assingment_2`.
 
 
