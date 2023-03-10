@@ -3,7 +3,7 @@
 1. Skriv av koden som sparat produkter i presentationen 8. Systemstöd och integration - Klient &
 Server.
 2. Lägg till funktionalitet för att spara kunder i samma API som i steg 1.
-    • Kunder har följande properties:
+    - Kunder har följande properties:
         i. Id (number)
         ii. Name (text)
         iii. Email (text)

@@ -1,12 +1,19 @@
 # Övningsuppgift 5
 
+Det här repot är ganska tomt!
+
+Det enda som finns är två olika kataloger (js och ts) med varsin index-fil. Följ instruktionerna nedan, i slutet ska ni ha ett projekt likt det i /assignment_4.
+
 1. Återanvänd API-et från övning 4 men gör det i enlighet med `separation of concerns` i åtanke. Se avsnittet `Separation of Concerns` nedan.
-2. Bygg ett API som låter klienter spara och visa bilar och användare i en SQLITE-databas
+2. Starta ett nytt projekt med hjälp av `npm init -y` när du står i `api-systems-and-integration/assignment_5`.
+3. Installera alla beroenden (dependencies) såsom `express` och `nodemon`.
+4. Bygg ett API som låter klienter spara och visa bilar och användare i en SQLITE-databas
     - En Bil har följande properties: Id (number), Make (text), Model (text)
-    - En Användare har följande properties: Id (number), Name (text), Motto (text), plus
-övriga uppgifter som behövs för inlogg
-3. Lägg till kod från presentationen i steg 1 så att användare kan skapa konton och logga in
-4. Lägg till kod som gör att endast inloggade användare kan anropa TODO-APIet
+    - En Användare har följande properties: Id (number), Name (text), Motto (text), plus övriga uppgifter som behövs för inlogg
+5. Lägg till kod från presentationen i steg 1 så att användare kan skapa konton och logga in
+6. Lägg till kod som gör att endast inloggade användare kan anropa TODO-APIet
+
+Testa ditt API med hjälp av Postman!
 
 ## Separation of Concerns
 
