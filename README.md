@@ -21,3 +21,10 @@ Där "x" står för vilken övning det rör sig om.
 4. Kliv in i en övning genom att köra kommandot `cd assignment_x` där x står för vilken uppgift det rör sig om t.ex. `cd assignment_1`
 5. Börja koda!
 
+### Problem?
+
+Springer du in i problem så gör följande:
+1. Läs feldmeddelandet och googla dig fram till en lösning.
+2. Prata med dina mobmedlemmar och försök lös problemet tillsammans.
+3. Ryck tag i Marcus och utkräv hämn... svar på dina frågor.
+

@@ -1,0 +1,20 @@
+<GamesResponse>
+    <Games>
+        <Game>
+            <title>The Leged of Zelda: Majora's Mask</title>
+            <release_date>2000-04-27</release_date>
+        </Game>
+        <Game>
+            <title>Elden Ring</title>
+            <release_date>2022-02-25</release_date>
+        </Game>
+        <Game>
+            <title>Warcraft III: Reign of Chaos</title>
+            <release_date>2002-07-03</release_date>
+        </Game>
+        <Game>
+            <title>Persona 5</title>
+            <release_date>2016-09-15</release_date>
+        </Game>
+    </Games>
+</GamesResponse>

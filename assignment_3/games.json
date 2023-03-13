@@ -1,0 +1,20 @@
+{
+    "games": [
+        {
+            "title": "The Legend of Zelda: Majora's Mask",
+            "release_date": "2000-04-27"
+        },
+        {
+            "title": "Elden Ring",
+            "release_date": "2022-02-25"
+        },
+        {
+            "title": "Warcraft III: Reign of Chaos",
+            "release_date": "2002-07-03"
+        },
+        {
+            "title": "Persona 5",
+            "release_date": "2016-09-15"
+        }
+    ]
+}
