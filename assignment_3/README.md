@@ -18,5 +18,9 @@ Gör följande (i antingen JS/TS eller både och):
 
 Skapa html-vyer i handlebars där man kan se spelen! Titta på `assignment_2` för inspiration och använd samma/liknande struktur för dina handlebars-filer för att enkelt komma igång.
 
+### Läsning
+
+Läsa och skriva filer i Node: https://blog.logrocket.com/reading-writing-json-files-nodejs-complete-tutorial/
+
 
 
