@@ -1,4 +1,4 @@
-# Gruppövning 1
+# Gruppövning 2
 
 Ni ska skapa er egna fullstack-applikation likt den vi jobbade med i `assignment_2`.
 
@@ -8,7 +8,7 @@ Er mob har fria tyglar att skapa något kul där ni kan sätta er egen prägel m
 
 För fullföljande av uppgiften ska ni göra följande:
     - Appen ska vara skriven i Typescript
-    - Appen ska använda sig av Handlebars för att rendera (OBS - om ni känner att ni vill så kan ni bygga med React istället
+    - Appen ska använda sig av Handlebars för att rendera (OBS - om ni känner att ni vill så kan ni bygga med React istället)
     - Ha en startsida (home page) för er app.
     - Visa en lista på era filmer (eller vad ni nu väljer)
     - Visa en specifik film med filmens detaljer
