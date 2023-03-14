@@ -11,7 +11,6 @@ const app = express()
 
 app.engine('hbs', exphbs.engine({
     extname: '.hbs',
-    // First page shown is called 'main'
     defaultLayout: 'main'
 }))
 app.set('view engine', 'hbs')
