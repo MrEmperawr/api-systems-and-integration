@@ -9,7 +9,7 @@
 ## Tips för TS-projektet
 
 Skapa interfaces för accounts och todos så de blir typade. TS är redan installerat från roten av av det här repot så du behöver inte configa det själv.
-Du kommer troligen behöva installera vissa ts-dependencies såsom `npm i @types/express`
+Du kommer behöva installa npm-moduler med `npm i`
 
 Fundera på vad som vore skönt att ha typat, här kommer några förslag (fundera och diskutera varför):
 1. Return values
