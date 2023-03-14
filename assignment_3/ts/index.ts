@@ -1,13 +1,18 @@
 // Import express
 import express from "express";
-// Import cars
-import { cars, ICar } from "./cars";
+// Import game model
+import { IGame } from "./models";
+
+const { readFileSync } = require('fs');
+const gamesJson = JSON.parse(readFileSync('./games.json'));
+
+const games = gamesJson['games'] as IGame[]
 
 function getId() {
     // Get the last item in array
-    const lastCar = cars.slice(-1)[0]
+    const lastGame = games.slice(-1)[0]
 
-    let id = (lastCar?.id)
+    let id = (lastGame?.id)
 
     return id
 }
@@ -19,45 +24,44 @@ const app = express()
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send("Cars")
+    res.send("Games")
 })
 
-// Start the server
+// Set up games route to serve all games
 
-app.listen(8000, () => {
-    console.log("http://localhost:8000")
+app.get('/games', (req, res) => {
+    res.send(games)
 })
 
-// Set up cars route to serve all cars
+// Set up game route to fetch only one game by title
 
-app.get('/cars', (req, res) => {
-    res.send(cars)
-})
+app.get('/games/:title', (req, res) => {
+    const id = parseInt(req.params.title)
 
-// Set up car route to fetch only one car by id
+    const game = games.find(g => g.id === id)
 
-app.get('/cars/:id', (req, res) => {
-    const id = parseInt(req.params.id)
-
-    const car = cars.find(c => c.id === id)
-
-    if (car) {
-        res.send(car)
+    if (game) {
+        res.send(game)
     } else {
         res.sendStatus(404)
     }
 })
 
-app.post('/cars', (req, res) => {
+app.post('/games', (req, res) => {
     const id = getId();
 
-    const newCar: ICar = {
-        id,
-        make: req.body.make,
-        model: req.body.model,
+    const newGame: IGame = {
+        title: req.body.title,
+        release_date: req.body.release_date,
     }
 
-    cars.push(newCar)
+    games.push(newGame)
 
     res.send(id)
+})
+
+// Start the server
+
+app.listen(8008, () => {
+    console.log("http://localhost:8008")
 })

@@ -14,3 +14,9 @@ Gör följande (i antingen JS/TS eller både och):
 4. Skapa en `GET`-funktion som hämtar en bil baserat på `make`. Finns inte modellen ska du svara med en 404.
 5. Gör om alla steg i TS eller JS, beroende på vad du började med.
 
+### Extra
+
+Skapa html-vyer i handlebars där man kan se spelen! Titta på `assignment_2` för inspiration och använd samma/liknande struktur för dina handlebars-filer för att enkelt komma igång.
+
+
+
