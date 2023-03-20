@@ -1,5 +1,6 @@
 # Övningsuppgift 9
 
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
 ## Wordpress
 
 Nu ska vi börja jobba med Wordpress, främst som vårt CMS (Content Management System).

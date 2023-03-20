@@ -6,6 +6,8 @@ I denna uppgift ska du läsa koden i både `js` och `ts` och försöka förstå 
 
 Innan du börjar jobba så kör `npm i` när du står i `assignment_3`
 
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
+
 Gör följande (i antingen JS/TS eller både och):
 
 1. Lägg till en egenskap hos bilar, kan vara vadsomhelst. T.ex. "engine". Alla bilar ska uppdateras med detta värde.

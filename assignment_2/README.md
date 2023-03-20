@@ -2,7 +2,9 @@
 
 ## Instruktioner
 
-För att köra dessa prgram behöver ni antingen köra `nodemon ts/index.ts` eller `nodemon js/index.js`
+För att köra dessa prgram behöver ni antingen köra `ts-node ts/index.ts` eller `node js/index.js`
+
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
 
 1. Följ exemplena och läs o handlebars [här](https://waelyasmina.medium.com/a-guide-into-using-handlebars-with-your-express-js-application-22b944443b65).
 2. Kör npm install och npm install  nodemon --save-dev nodemon. Du kommer få ett problem när du kör första gången, ingen panik! Läs vidare

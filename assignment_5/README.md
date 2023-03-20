@@ -2,6 +2,8 @@
 
 Det här repot är ganska tomt!
 
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
+
 Det enda som finns är två olika kataloger (js och ts) med varsin index-fil. Följ instruktionerna nedan, i slutet ska ni ha ett projekt likt det i `/assignment_4`.
 
 1. Återanvänd API-et från övning 4 men gör det i enlighet med `separation of concerns` i åtanke. Se avsnittet `Separation of Concerns` nedan.

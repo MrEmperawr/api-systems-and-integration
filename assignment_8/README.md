@@ -1,5 +1,7 @@
 # Övningsuppgift 8
 
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
+
 Nu ska vi bygga ett helt eget API som server kunder och en klient som pratar med vårt API.
 
 Ni ska skapa en klient och en server som kan prata med varandra. Detta repo är förhållandevis tomt så ni kommer behöva fylla det med bra kod som ni strukturer fint enligt våra principer kring ***Separation of Concerns***.

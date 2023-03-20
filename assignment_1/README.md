@@ -6,6 +6,8 @@ I denna uppgift ska du läsa koden i både `js` och `ts` och försöka förstå 
 
 Innan du börjar jobba så kör `npm i` när du står i `assignment_1`
 
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
+
 När du bildat dig en uppfattnig om vad som sker ska du göra följande:
 
 1. Lägg till en ny fil med namn "books.ts" i `ts`

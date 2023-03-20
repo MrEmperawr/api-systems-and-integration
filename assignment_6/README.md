@@ -1,5 +1,7 @@
 # Övningsuppgift 6
 
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
+
 Den här uppgiften går ut på att jobba med ett fristående tredjeparts-API där vi, genom vår egen klient, anropar JsonPlaceholder API för att utföra olika CRUD-operationer.
 
 Ni ska huvudsakligen jämföra hur det är att jobba med fetch och axios som klient-apier.

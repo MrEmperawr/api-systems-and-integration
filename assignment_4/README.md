@@ -1,5 +1,7 @@
 # Övningsuppift 4
 
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
+
 1. Använd dig av och testa APIet som beskrivs i presentationen `4 Systemstöd och integration - auth-API` och återfinns här i `assignment_4`.
 2. Bygg ett API som låter klienter spara och visa todos i en SQLITE-databas
     - En Todo har följande properties: Id (number), Title (text), done (true/false)

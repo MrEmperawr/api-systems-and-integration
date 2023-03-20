@@ -1,5 +1,7 @@
 # Övningsuppgift 7
 
+Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
+
 I denna uppgift ska vi arbeta med SWAPI (Star Wars API) och ***integrera*** den med vår egna tjänst. Den egna tjänsten gör inte så mycket mer än att man registrerar användare samt som användare kan man spara viss data.
 
 När ni bygger detta API ska ni ha **Separation of Concerns** i åtanke, precis som vi jobbade med i övning 5. Det går att göra klart uppgiften genom att ha all kod i index.js/ts MEN för att bli duktiga mjukvaruingenjörer behöver ni tänka på er arkitektur. Man kan alltid börja med att skriva all kod i index.js/ts och sedan bryta ut det.
