@@ -13,6 +13,11 @@ function getId() {
     return id
 }
 
+function createNewId() {
+    const newId = getId() + 1;
+    return newId;
+}
+
 // Initialize express and set up the root route (start page)
 
 const app = express()

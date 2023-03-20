@@ -12,6 +12,13 @@ function getId() {
     return id
 }
 
+function createNewId(): number {
+    const newId = getId() + 1;
+    return newId;
+}
+
+
+
 // Initialize express and set up the root route (start page)
 
 const app = express()
@@ -49,15 +56,15 @@ app.get('/cars/:id', (req, res) => {
 })
 
 app.post('/cars', (req, res) => {
-    const id = getId();
 
+    const newId = createNewId()
     const newCar: ICar = {
-        id,
+        id: newId,
         make: req.body.make,
         model: req.body.model,
     }
 
     cars.push(newCar)
 
-    res.send(id)
+    res.send(newId)
 })
