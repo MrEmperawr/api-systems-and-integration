@@ -15,6 +15,10 @@ Där "x" står för vilken övning det rör sig om.
 
 ### Lathund
 
+För att typescript ska funka behöver du skriva: `npm install -g ts-node typescript '@types/node'` som installer ts-node m.m.
+
+För att köra typescript-filer behöver du använde `ts-node` istället för bara `node`
+
 1. Klona repot
 2. Kliv in i katalogen med ditt repo - använder du terminal så är det `cd api-systems-and-integration` givet att du står i katalogen du klonade i, om inte måste du först gå dit.
 3. Skapa en branch med kommandot `git checkout -b "namn-efternamn-assignment-x"`
