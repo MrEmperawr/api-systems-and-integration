@@ -19,3 +19,11 @@ När du bildat dig en uppfattnig om vad som sker ska du göra följande:
 7. Skapa en route som server EN bok baserat på id som heter `/books/:id` (GET igen)
 8. Skapa en route som skapar en ny bok, se cars-exemplet i index.ts (POST ska användas här + en ny id-funktion kanske måste skapas/modifieras)
 9. Gör om alla steg men i `js` och utvärdera skillnader och likheter. Vad är styrkorna med js respektive ts?
+
+## Resurser:
+Ta dig igenom följande kurser för att lära dig Node JS och Express:
+- https://youtube.com/playlist?list=PLurIMwd6GdCi3ssXNAcjZ2l5mYaTfYPhf
+- https://www.linkedin.com/learning/node-js-essential-training-2
+- https://www.linkedin.com/learning/learning-npm-the-node-package-manager-2018
+- https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js-3
+- https://www.linkedin.com/learning/building-restful-apis-with-node-js-and-express

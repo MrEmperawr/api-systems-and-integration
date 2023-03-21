@@ -14,7 +14,7 @@ Installera `ts-node` för att kunna köra ts-node istället för node för ts-fi
 6. Gör om uppgiften i TS
 7. Gör klart tidigare uppgifter om du inte redan gjort det
 
-## Resurser:
+## Resurser (samma som i Assignment 1):
 Ta dig igenom följande kurser för att lära dig Node JS och Express:
 - https://youtube.com/playlist?list=PLurIMwd6GdCi3ssXNAcjZ2l5mYaTfYPhf
 - https://www.linkedin.com/learning/node-js-essential-training-2
