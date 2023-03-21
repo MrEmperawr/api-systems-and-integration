@@ -2,7 +2,7 @@
 
 ## Instruktioner
 
-För att köra dessa prgram behöver ni antingen köra `ts-node ts/index.ts` eller `node js/index.js`
+För att köra dessa prgram behöver ni antingen köra `ts-node ts/index.ts` eller `node js/index.js` om ni inte använder `nodemon`
 
 Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
 
@@ -13,6 +13,15 @@ Installera `ts-node` för att kunna köra ts-node istället för node för ts-fi
 5. En User har följande egenskaper: Id (int), Name (string), Description (string)
 6. Gör om uppgiften i TS
 7. Gör klart tidigare uppgifter om du inte redan gjort det
+
+## Resurser:
+Ta dig igenom följande kurser för att lära dig Node JS och Express:
+- https://youtube.com/playlist?list=PLurIMwd6GdCi3ssXNAcjZ2l5mYaTfYPhf
+- https://www.linkedin.com/learning/node-js-essential-training-2
+- https://www.linkedin.com/learning/learning-npm-the-node-package-manager-2018
+- https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js-3
+- https://www.linkedin.com/learning/building-restful-apis-with-node-js-and-express
+
 
 ### Extra
 
