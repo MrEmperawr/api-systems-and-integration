@@ -56,7 +56,6 @@ app.get('/cars/:id', (req, res) => {
 })
 
 app.post('/cars', (req, res) => {
-
     const newId = createNewId()
     const newCar: ICar = {
         id: newId,
@@ -66,5 +65,5 @@ app.post('/cars', (req, res) => {
 
     cars.push(newCar)
 
-    res.send(newId)
+    res.send(newId.toString())
 })
