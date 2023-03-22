@@ -18,6 +18,9 @@ Fundera på vad som vore skönt att ha typat, här kommer några förslag (funde
 2. Variabler
 3. Funktionsparametrar
 
+### Resurser
+Kurs i (SQLite)[https://www.linkedin.com/learning/express-essential-training-14539342/using-express-with-a-database?autoplay=true&u=57075785]
+
 ### Vad är fördelar respektive nackdelar med TS?
 
 Här finns lite material att läsa om för-och nackdelar:
