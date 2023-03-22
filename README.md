@@ -27,6 +27,49 @@ För att köra typescript-filer behöver du använde `ts-node` istället för ba
 
 ### Problem?
 
+- OM ts-node eller nodemon inte fungerar TROTS att ni har installerat det globalt med `npm i -g ts-node nodemon` så kan ni göra följande:
+1. Lägg till detta i VARJE `package.json` för `assignment_x`
+`"devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.5",
+    "@types/uuid": "^9.0.1",
+    "nodemo": "^1.0.0",
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.2"
+  }`
+
+Se till att det läggs till i er packag.json så det då ser ut ungefär så här:
+`
+{
+  "name": "node_express_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ts/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {                     <----- Ska ligga som en nyckel i din package.json
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.5",
+    "@types/uuid": "^9.0.1",
+    "nodemo": "^1.0.0",
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.2"
+  }
+}
+
+`
+
 Springer du in i problem så gör följande:
 1. Läs feldmeddelandet och googla dig fram till en lösning.
 2. Prata med dina mobmedlemmar och försök lös problemet tillsammans.
