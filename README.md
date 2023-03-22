@@ -32,3 +32,14 @@ Springer du in i problem så gör följande:
 2. Prata med dina mobmedlemmar och försök lös problemet tillsammans.
 3. Ryck tag i Marcus och utkräv hämn... svar på dina frågor.
 
+## Resurser
+
+### Node & Express (Vecka 12 & 13)
+- https://youtube.com/playlist?list=PLurIMwd6GdCi3ssXNAcjZ2l5mYaTfYPhf
+- https://www.linkedin.com/learning/node-js-essential-training-2
+- https://www.linkedin.com/learning/learning-npm-the-node-package-manager-2018
+- https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js-3
+- https://www.linkedin.com/learning/building-restful-apis-with-node-js-and-express
+
+### Autentisering (Vecka 13)
+- https://www.linkedin.com/learning/node-js-securing-restful-apis-2/securing-node-restful-apis2
