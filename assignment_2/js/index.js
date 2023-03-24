@@ -1,8 +1,8 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
 
-const usersData = require('./data/users.js')
-const carsData = require('../ts/data/cars.js')
+// const usersData = require('./data/users.js')
+const carsData = require('../js/data/cars.js')
 
 const app = express()
 
