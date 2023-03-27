@@ -10,7 +10,7 @@ Installera `ts-node` för att kunna köra ts-node istället för node för ts-fi
 
 Gör följande (i antingen JS/TS eller både och):
 
-1. Lägg till en egenskap hos bilar, kan vara vadsomhelst. T.ex. "engine". Alla bilar ska uppdateras med detta värde.
+1. Lägg till en egenskap hos spelen, kan vara vadsomhelst. T.ex. "rating". Alla spel ska uppdateras med detta värde.
 2. Skapa en en `GET`-funktion som hämtar en bil baserat på din nya egenskap. Finns inte någon bil med egenskapen du söker efter så ska du svara med en 404-status.
 3. Skapa en `GET`-funktion som hämtar ett spel baserat på `title`. Finns inte modellen ska du svara med en 404.
 4. Skapa en `GET`-funktion som hämtar ett spel baserat på `release_date`. Finns inte modellen ska du svara med en 404.
