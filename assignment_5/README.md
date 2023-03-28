@@ -13,7 +13,7 @@ Det enda som finns är två olika kataloger (js och ts) med varsin index-fil. F�
     - En Bil har följande properties: Id (number), Make (text), Model (text)
     - En Användare har följande properties: Id (number), Name (text), Motto (text), plus övriga uppgifter som behövs för inlogg
 5. Lägg till kod från presentationen i steg 1 så att användare kan skapa konton och logga in
-6. Lägg till kod som gör att endast inloggade användare kan anropa TODO-APIet
+6. Lägg till kod som gör att endast inloggade användare kan anropa TODO-APIet (Se uppgift 4)
 
 Testa ditt API med hjälp av Postman!
 
