@@ -33,7 +33,7 @@ app.get('/games', (req, res) => {
 
 // Set up game route to fetch only one game by id
 
-app.get('/games/:title', (req, res) => {
+app.get('/games/:id', (req, res) => {
     const id = parseInte(req.params.title)
 
     const game = games.find(g => g.id === id)
