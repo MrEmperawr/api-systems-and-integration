@@ -1,6 +1,13 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
+
+// This should not be here
+// Create a .env file and make sure it is ignored by .gitignore
+// Install "dotenv" and import it as such require("dotenv").config();
+// Now we can access the contents of the .env-file via process.env
+// Remove the JWT_SECRET constant and make use of the secret from the .env file
+
 const JWT_SECRET = 'my-secret-phrase'
 
 module.exports.hashPassword = (password) => {
