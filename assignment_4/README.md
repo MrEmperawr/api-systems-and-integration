@@ -19,6 +19,7 @@ Fundera på vad som vore skönt att ha typat, här kommer några förslag (funde
 3. Funktionsparametrar
 
 ### Resurser
+Info om JWT och autentisering: https://www.linkedin.com/learning/node-js-securing-restful-apis-2/securing-node-restful-apis?autoplay=true&u=57075785
 Kurs i (SQLite)[https://www.linkedin.com/learning/express-essential-training-14539342/using-express-with-a-database?autoplay=true&u=57075785]
 
 ### Vad är fördelar respektive nackdelar med TS?
