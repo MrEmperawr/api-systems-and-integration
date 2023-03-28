@@ -16,7 +16,7 @@ Gör följande (i antingen JS/TS eller både och):
 4. Modifiera vår `GET`-funktion `/games` som redan hämtar alla spel. Baserat på `release_date` ska funktionen istället returnera ett spel baserat på datumet. Finns inte modellen ska du svara med en 404. Du kommer behöva använda `query paramaters` för att lösa denna uppgift.
 Hint: använd `req.query.realease_date` för att komma åt query-parametern.
 Hint 2: Adressfältet kommer se ut ungefär så här: `localhost:8000/games/?release_date=1998-06-03`
-5. Modifiera `/games` igen baserat på en query-parameter `title` och returnera ett spel baserat på  denna nya query-paramter.
+5. Modifiera `/games` igen baserat på en query-parameter `rating` och returnera ett spel baserat på  denna nya query-paramter. Glöm inte att lägga till rating till games-objektet!
 6. Gör om alla steg i TS eller JS, beroende på vad du började med.
 
 
