@@ -30,14 +30,18 @@ app.get('/', (req, res) => {
 // Set up games route to serve all games
 
 app.get('/games', (req, res) => {
+    // Check for query parameters here with an if-statement
+    // If no match is found return a 404 inside the if statement
+    // If no query params are present, make sure to send all games as the endpoint is doing right now
     res.send(games)
+
 })
 
 // Set up game route to fetch only one game by id
 
 app.get('/games/:id', (req, res) => {
-    console.log(req.params)
     const id = parseInt(req.params.id)
+    console.log(id)
 
     const game = games.find(g => g.id === id)
 
@@ -47,6 +51,8 @@ app.get('/games/:id', (req, res) => {
         res.sendStatus(404)
     }
 })
+
+
 
 app.post('/games', (req, res) => {
     const id = getId();
