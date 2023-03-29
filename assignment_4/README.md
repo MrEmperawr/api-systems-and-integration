@@ -20,6 +20,7 @@ Fundera på vad som vore skönt att ha typat, här kommer några förslag (funde
 
 ### Resurser
 Info om JWT och autentisering: https://www.linkedin.com/learning/node-js-securing-restful-apis-2/securing-node-restful-apis?autoplay=true&u=57075785
+Artikel om JWT: https://jwt.io/introduction
 Artikel om hashning och kryptering [här](https://www.pingidentity.com/en/resources/blog/post/encryption-vs-hashing-vs-salting.html#:~:text=Hashing%20is%20a%20one%2Dway%20process%20that%20converts%20a%20password,to%20obfuscate%20the%20actual%20password.)
 Kurs i (SQLite)[https://www.linkedin.com/learning/express-essential-training-14539342/using-express-with-a-database?autoplay=true&u=57075785]
 
