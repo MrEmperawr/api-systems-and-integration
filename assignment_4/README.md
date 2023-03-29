@@ -5,6 +5,7 @@ Installera `ts-node` för att kunna köra ts-node istället för node för ts-fi
 1. Använd dig av och testa APIet som beskrivs i presentationen `4 Systemstöd och integration - auth-API` och återfinns här i `assignment_4`.
 2. Bygg ett API som låter klienter spara och visa todos i en SQLITE-databas
     - En Todo har följande properties: Id (number), Title (text), done (true/false)
+    Man behöver INTE koppla ihop tabellen för todos med tabellen för konton, men vill man göra det så går det bra. Då behöver man dock se till att tabellen för `todos` också har en foreign key `account_id`
 3. Lägg till kod som gör att endast inloggade användare kan anropa TODO-APIet
 4. Gör om projektet med TS
 

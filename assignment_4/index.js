@@ -1,5 +1,5 @@
 const express = require('express')
-const db = require('./services/db.js')
+const db = require('./services/DBService.js')
 const utils = require('./utils/utils')
 
 const app = express();
@@ -86,6 +86,51 @@ app.get('/secrets', forceAuthorize, (req, res) => {
         secret1: "Classes? Syntactical sugar. No less, no more.",
         secret2: "The cake is a lie."
     })
+})
+
+app.get('/todos/all', forceAuthorize, (req, res) => {
+    db.getTodos((error, data) => {
+        if (error) {
+            res.sendStatus(500)
+        } else {
+            res.send(data)
+        }
+    })
+
+})
+
+app.get('/todos/all:id', forceAuthorize, (req, res) => {
+    res.send()
+})
+
+app.get('/todos', forceAuthorize, (req, res) => {
+    const id = req.user.userId
+    db.getTodosByAccountId(id, (error, data) => {
+        if (error) {
+            res.sendStatus(500)
+        } else {
+            res.send(data)
+        }
+    })
+})
+
+app.get('/todos:id', forceAuthorize, (req, res) => {
+    res.send()
+})
+
+app.post('/todos', forceAuthorize, (req, res) => {
+    const { title, isDone } = req.body
+    const user = req.user
+    if (title && isDone !== undefined) {
+        db.addTodo(title, isDone, user.userId, (error) => {
+            error ? res.sendStatus(500) : res.sendStatus(200)
+        })
+
+    } else {
+        res.sendStatus(400)
+    }
+
+
 })
 
 app.listen(8008, () => {
