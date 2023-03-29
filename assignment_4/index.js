@@ -129,6 +129,7 @@ app.get('/todos/:id', forceAuthorize, (req, res) => {
     const userId = req.user.userId
     db.getTodoByAccountId(todoId, userId, (error, data) => {
         if (error) {
+            console.log(error)
             res.send(500)
         } else {
             res.send(data)
