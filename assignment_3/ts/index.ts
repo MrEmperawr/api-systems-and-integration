@@ -30,10 +30,19 @@ app.get('/', (req, res) => {
 // Set up games route to serve all games
 
 app.get('/games', (req, res) => {
-    // Check for query parameters here with an if-statement
-    // If no match is found return a 404 inside the if statement
-    // If no query params are present, make sure to send all games as the endpoint is doing right now
-    res.send(games)
+    // This is a suggested solution for the release date query param
+    // Do exactly this for each query parameter you wish to include
+    const release_date = req.query.release_date
+    if (release_date) {
+        const game = games.find(g => g.release_date === release_date)
+        if (game) {
+            res.send(game)
+        } else {
+            res.sendStatus(404)
+        }
+    } else {
+        res.send(games)
+    }
 
 })
 
