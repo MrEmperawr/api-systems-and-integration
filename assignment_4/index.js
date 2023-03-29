@@ -88,6 +88,8 @@ app.get('/secrets', forceAuthorize, (req, res) => {
     })
 })
 
+// Todos
+
 app.get('/todos/all', forceAuthorize, (req, res) => {
     db.getTodos((error, data) => {
         if (error) {
@@ -99,7 +101,7 @@ app.get('/todos/all', forceAuthorize, (req, res) => {
 
 })
 
-app.get('/todos/all:id', forceAuthorize, (req, res) => {
+app.get('/todos/all/:id', forceAuthorize, (req, res) => {
     res.send()
 })
 
@@ -112,9 +114,10 @@ app.get('/todos', forceAuthorize, (req, res) => {
             res.send(data)
         }
     })
+
 })
 
-app.get('/todos:id', forceAuthorize, (req, res) => {
+app.get('/todos/:id', forceAuthorize, (req, res) => {
     res.send()
 })
 
