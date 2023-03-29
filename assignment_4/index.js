@@ -102,7 +102,14 @@ app.get('/todos/all', forceAuthorize, (req, res) => {
 })
 
 app.get('/todos/all/:id', forceAuthorize, (req, res) => {
-    res.send()
+    const todoId = req.params.id
+    db.getTodoById(todoId, (error, data) => {
+        if (error) {
+            res.send(500)
+        } else {
+            res.send(data)
+        }
+    })
 })
 
 app.get('/todos', forceAuthorize, (req, res) => {
@@ -118,7 +125,15 @@ app.get('/todos', forceAuthorize, (req, res) => {
 })
 
 app.get('/todos/:id', forceAuthorize, (req, res) => {
-    res.send()
+    const todoId = req.params.id
+    const userId = req.user.userId
+    db.getTodoByAccountId(todoId, userId, (error, data) => {
+        if (error) {
+            res.send(500)
+        } else {
+            res.send(data)
+        }
+    })
 })
 
 app.post('/todos', forceAuthorize, (req, res) => {

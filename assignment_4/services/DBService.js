@@ -95,23 +95,24 @@ module.exports.getTodos = function (callback) {
     db.all(query, callback)
 }
 
-module.exports.getTodoByAccountId = function (id, callback) {
+module.exports.getTodoByAccountId = function (todoId, accountId, callback) {
     const query = `
         SELECT * FROM todos WHERE id = ?
         JOIN accounts ON todos.account_id = accounts.id
+        WHERE account_id = ?
     `
-    const values = [id]
+    const values = [todoId, accountId]
 
     db.get(query, values, callback)
 }
 
-module.exports.getTodosByAccountId = function (account_id, callback) {
+module.exports.getTodosByAccountId = function (accountId, callback) {
     const query = `
         SELECT * FROM todos
         JOIN accounts ON todos.account_id = accounts.id
         WHERE account_id = ?
     `
-    const values = [account_id]
+    const values = [accountId]
 
     db.all(query, values, callback)
 }
