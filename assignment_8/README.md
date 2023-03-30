@@ -11,7 +11,7 @@ Detta projekt kräver lite databaslogik, kika i `assignment_4` och `assignment_6
 I detta projekt finns det inga beroenden installerade och inga hjälpfiler att kika på. Så innan ni kommer igång enligt instruktionerna nedan behöver ni göra följande:
 
     - npm init -y
-    - npm install express
+    - npm install express @types/express sqlite3
 
 Nu är ni redo!
 
@@ -24,7 +24,10 @@ Nu är ni redo!
     - Hämta filmen med ID 2
     - Implementera paginering för varje GET-endpoint (people/planets/films)
 
-2. Skapa en databas (se `assignment_4` för inspiration) så du kan spara data, utöka nu funktionaliteten för ditt API så att man kan
+2. Skapa en databas i sqlite3 eller MySQL (se `assignment_4` för inspiration) så du kan spara data, utöka nu funktionaliteten för ditt API så att man kan
     - Skapa användare **OBS** det räcker med att ni knyter användar-ID till personer/planeter/filmer utan att implementera inlogg
     - Som användare ska man kunna spara personer/planeter/filmer (så först behöver du/ni hämta en planet/person och sedan spara den åt användaren)
     - Som användare kan jag ta bort personer/planeter/filmer
+
+För att klara uppgiften kommer ni behöva fyra tabeller i er databas. `users`, `planets`, `persons` och `movies` och se till att alla tabeller (utom users) har en foreign key till `users`.
+Det räcker med att koppla
