@@ -3,22 +3,26 @@
         {
             "id": 1,
             "title": "The Legend of Zelda: Majora's Mask",
-            "release_date": "2000-04-27"
+            "release_date": "2000-04-27",
+            "rating": 8
         },
         {
             "id": 2,
             "title": "Elden Ring",
-            "release_date": "2022-02-25"
+            "release_date": "2022-02-25",
+            "rating": 9
         },
         {
             "id": 3,
             "title": "Warcraft III: Reign of Chaos",
-            "release_date": "2002-07-03"
+            "release_date": "2002-07-03",
+            "rating": 7
         },
         {
             "id": 4,
             "title": "Persona 5",
-            "release_date": "2016-09-15"
+            "release_date": "2016-09-15",
+            "rating": 9
         }
     ]
 }

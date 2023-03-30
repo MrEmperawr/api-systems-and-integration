@@ -33,8 +33,19 @@ app.get('/games', (req, res) => {
     // This is a suggested solution for the release date query param
     // Do exactly this for each query parameter you wish to include
     const release_date = req.query.release_date
+    // The rating param has a more advanced type than just "string"
+    // We therefore explicitly convert to a string
+    const rating = req.query.rating?.toString()
     if (release_date) {
         const game = games.find(g => g.release_date === release_date)
+        if (game) {
+            res.send(game)
+        } else {
+            res.sendStatus(404)
+        }
+    } else if (rating) {
+        // We parse the rating as it is still a string but we expect it to be an int
+        const game = games.find(g => g.rating === parseInt(rating))
         if (game) {
             res.send(game)
         } else {
@@ -69,6 +80,7 @@ app.post('/games', (req, res) => {
     const newGame: IGame = {
         title: req.body.title,
         release_date: req.body.release_date,
+        rating: req.body.rating
     }
 
     games.push(newGame)

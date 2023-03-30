@@ -3,6 +3,7 @@ export interface IGame {
     id?: number;
     title: string;
     release_date: string;
+    rating: number;
 }
 
 
