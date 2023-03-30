@@ -1,21 +1,11 @@
 // Import express
 import express from "express";
+import { books, IBook } from "./books";
 // Import cars
 import { cars, ICar } from "./cars";
+import { createNewId } from "./utils";
 
-function getId() {
-    // Get the last item in array
-    const lastCar = cars.slice(-1)[0]
 
-    let id = (lastCar?.id)
-
-    return id
-}
-
-function createNewId(): number {
-    const newId = getId() + 1;
-    return newId;
-}
 
 
 
@@ -56,7 +46,7 @@ app.get('/cars/:id', (req, res) => {
 })
 
 app.post('/cars', (req, res) => {
-    const newId = createNewId()
+    const newId = createNewId(true)
     const newCar: ICar = {
         id: newId,
         make: req.body.make,
@@ -64,6 +54,37 @@ app.post('/cars', (req, res) => {
     }
 
     cars.push(newCar)
+
+    res.send(newId.toString())
+})
+
+app.get('/books', (req, res) => {
+    res.send(books)
+})
+
+// Set up car route to fetch only one car by id
+
+app.get('/book/:id', (req, res) => {
+    const id = parseInt(req.params.id)
+
+    const book = books.find(c => c.id === id)
+
+    if (book) {
+        res.send(book)
+    } else {
+        res.sendStatus(404)
+    }
+})
+
+app.post('/books', (req, res) => {
+    const newId = createNewId(false)
+    const newBook: IBook = {
+        id: newId,
+        title: req.body.title,
+        ISBN: req.body.ISBN,
+    }
+
+    books.push(newBook)
 
     res.send(newId.toString())
 })
