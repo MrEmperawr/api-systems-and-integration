@@ -1,0 +1,18 @@
+<h2>Users</h2>
+
+{{#each users}}
+<p>
+    <a href="/users/{{id}}">{{name}}</a>
+</p>
+{{/each}}
+
+<hr>
+
+<h2>Create car</h2>
+
+<form action="/new-user" method="post">
+    <input type="text" name="name" placeholder="Name"> <br>
+    <input type="text" name="description" placeholder="Description"> <br>
+
+    <input type="submit" value="Save">
+</form>

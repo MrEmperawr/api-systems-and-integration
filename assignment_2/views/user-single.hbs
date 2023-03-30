@@ -1,0 +1,13 @@
+<h2>{{name}} </h2>
+<p>Description: {{description}}</p>
+
+<form action="/users/{{id}}/update" method="post">
+    <input type="text" name="name" placeholder="Name" value="{{name}}"> <br>
+    <input type="text" name="description" placeholder="Description" value="{{description}}"> <br>
+
+    <input type="submit" value="Save">
+</form>
+
+<form action="/users/{{id}}/delete" method="post">
+    <input type="submit" value="Delete">
+</form>

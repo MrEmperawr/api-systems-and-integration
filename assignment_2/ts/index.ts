@@ -3,6 +3,8 @@ const exphbs = require('express-handlebars')
 
 import * as carsData from "./data/cars"
 import { ICar } from "./data/cars";
+import * as usersData from "./data/users"
+import { IUser } from "./data/users";
 
 
 const app = express()
@@ -71,28 +73,40 @@ app.post('/cars/:id/delete', async (req, res) => {
 
 /// Users ///
 app.get('/users', async (req, res) => {
-    // TODO: Show all users
-    res.send("TODO")
+    const users = usersData.getAll()
+    res.render('users-list', { users })
 })
 
 app.post('/new-user', async (req, res) => {
-    // TODO: Create user
-    res.send("TODO")
+    const newUser: IUser = {
+        name: req.body.name,
+        description: req.body.description
+    }
+
+    usersData.add(newUser)
+
+    res.redirect('/users')
 })
 
 app.get('/users/:id', async (req, res) => {
-    // TODO: Show one user
-    res.send("TODO")
+    const user = usersData.findById(req.params.id)
+
+    res.render('user-single', user)
 })
 
 app.post('/users/:id/update', async (req, res) => {
-    // TODO: Update user
-    res.send("TODO")
+    usersData.update(req.params.id, {
+        name: req.body.name,
+        description: req.body.description
+    })
+
+    res.redirect('/users')
 })
 
 app.post('/users/:id/delete', async (req, res) => {
-    // TODO: Delete user
-    res.send("TODO")
+    usersData.deleteById(req.params.id)
+
+    res.redirect('/users')
 })
 
 
