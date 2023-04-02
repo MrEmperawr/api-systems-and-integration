@@ -47,7 +47,6 @@ app.post('/register', (req, res) => {
 
     db.registerUser(username, hashedPassword, (error) => {
         if (error) {
-            console.log(error)
             res.status(500).send(error)
         } else {
             res.sendStatus(200)
@@ -129,7 +128,6 @@ app.get('/todos/:id', forceAuthorize, (req, res) => {
     const userId = req.user.userId
     db.getTodoByAccountId(todoId, userId, (error, data) => {
         if (error) {
-            console.log(error)
             res.send(500)
         } else {
             res.send(data)

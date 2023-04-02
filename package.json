@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3"
   }
 }

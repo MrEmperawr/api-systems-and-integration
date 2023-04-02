@@ -61,7 +61,6 @@ app.get('/games', (req, res) => {
 
 app.get('/games/:id', (req, res) => {
     const id = parseInt(req.params.id)
-    console.log(id)
 
     const game = games.find(g => g.id === id)
 
