@@ -21,6 +21,8 @@ Instruktioner:
 
 2. Skriv ett Node JS-program som gör samma anrop som ovan med hjälp av Axios istället för fetch.
 
+3. Lägg till en databastjänst som gör att ni kan spara poster och göra CRUD-operationer.
+
 - Vad är de huvudsakliga skillnaderna mellan fetch och axios?
 - Är det ena lättare än det andra?
 - Vilka fördelar har axios och vilka fördelar har fetch?

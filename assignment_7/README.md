@@ -1,4 +1,4 @@
-# Övningsuppgift 8
+# Övningsuppgift 7
 
 Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
 
