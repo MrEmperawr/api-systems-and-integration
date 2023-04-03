@@ -9,6 +9,7 @@ export class JsonPlaceholderClient {
 
     constructor() {
         this.baseUrl = 'https://jsonplaceholder.typicode.com';
+        console.log(this.baseUrl)
     }
 
     public async getPosts(): Promise<Post[]> {

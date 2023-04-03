@@ -5,8 +5,8 @@ import { Post } from '../models/posts';
 export class PostsController {
     private client: JsonPlaceholderClient;
 
-    constructor(client: JsonPlaceholderClient) {
-        this.client = client;
+    constructor() {
+        this.client = new JsonPlaceholderClient();
     }
 
     public async getAllPosts(req: Request, res: Response): Promise<void> {

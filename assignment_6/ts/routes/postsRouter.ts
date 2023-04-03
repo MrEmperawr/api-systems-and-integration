@@ -1,10 +1,8 @@
 import express from "express"
-import { JsonPlaceholderClient } from "../client/JsonPlaceholderClient"
 import { PostsController } from "../controllers/PostsController"
 
 const postsRouter = express.Router()
-const client = new JsonPlaceholderClient()
-const postsController = new PostsController(client)
+const postsController = new PostsController()
 
 postsRouter.get("/", postsController.getAllPosts)
 postsRouter.get("/:id", postsController.getPostById)

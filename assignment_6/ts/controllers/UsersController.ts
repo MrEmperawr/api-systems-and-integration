@@ -5,11 +5,12 @@ import { User } from '../models/users';
 export class UsersController {
     private client: JsonPlaceholderClient;
 
-    constructor(client: JsonPlaceholderClient) {
-        this.client = client;
+    constructor() {
+        this.client = new JsonPlaceholderClient();
     }
 
     public async getAllUsers(req: Request, res: Response): Promise<void> {
+        console.log(this.client)
         const users: User[] = await this.client.getUsers();
         res.json(users);
     }

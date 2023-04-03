@@ -4,8 +4,7 @@ import { PostsController } from "../controllers/PostsController"
 import { UsersController } from "../controllers/UsersController"
 
 const usersRouter = express.Router()
-const client = new JsonPlaceholderClient()
-const usersController = new UsersController(client)
+const usersController = new UsersController()
 
 usersRouter.get("/", usersController.getAllUsers)
 usersRouter.get("/:id", usersController.getUserById)
