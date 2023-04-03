@@ -15,7 +15,18 @@ Det enda som finns är två olika kataloger (js och ts) med varsin index-fil. F�
 5. Lägg till kod från presentationen i steg 1 så att användare kan skapa konton och logga in
 6. Lägg till kod som gör att endast inloggade användare kan anropa TODO-APIet (Se uppgift 4)
 
+Vill du se din databas i vscode?
+
+Installera `sqlite` som vscode-plugin! Sök på `sqlite` i extensions marketplace och installera den som heter "Sqlite".
+För att kunna se datat i din tabell kan du högerklicka på din .db-fil och köra "Open Database" då kommer datbasen dyka upp som en flik i din vscode explorer.
+
 Testa ditt API med hjälp av Postman!
+
+### Databastips
+Vill du se din databas i vscode?
+
+Installera `sqlite` som vscode-plugin! Sök på `sqlite` i extensions marketplace och installera den som heter "Sqlite".
+För att kunna se datat i din tabell kan du högerklicka på din .db-fil och köra "Open Database" då kommer datbasen dyka upp som en flik i din vscode explorer.
 
 ## Separation of Concerns
 

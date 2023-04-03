@@ -8,6 +8,14 @@ Installera `ts-node` för att kunna köra ts-node istället för node för ts-fi
 3. Lägg till kod som gör att endast inloggade användare kan anropa TODO-APIet
 4. Gör om projektet med TS
 
+### Databastips
+Vill du se din databas i vscode?
+
+Installera `sqlite` som vscode-plugin! Sök på `sqlite` i extensions marketplace och installera den som heter "Sqlite".
+För att kunna se datat i din tabell kan du högerklicka på din .db-fil och köra "Open Database" då kommer datbasen dyka upp som en flik i din vscode explorer.
+
+Testa ditt API med hjälp av Postman!
+
 ## Tips för TS-projektet
 
 Skapa interfaces för accounts och todos så de blir typade. TS är redan installerat från roten av av det här repot så du behöver inte configa det själv.

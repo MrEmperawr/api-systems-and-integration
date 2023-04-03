@@ -25,6 +25,13 @@ För att köra typescript-filer behöver du använde `ts-node` istället för ba
 4. Kliv in i en övning genom att köra kommandot `cd assignment_x` där x står för vilken uppgift det rör sig om t.ex. `cd assignment_1`
 5. Börja koda!
 
+## Databastips
+
+Vill du se din databas i vscode?
+
+Installera `sqlite` som vscode-plugin! Sök på `sqlite` i extensions marketplace och installera den som heter "Sqlite".
+För att kunna se datat i din tabell kan du högerklicka på din .db-fil och köra "Open Database" då kommer datbasen dyka upp som en flik i din vscode explorer.
+
 ### Problem?
 
 - OM ts-node eller nodemon inte fungerar TROTS att ni har installerat det globalt med `npm i -g ts-node nodemon` så kan ni göra följande:
