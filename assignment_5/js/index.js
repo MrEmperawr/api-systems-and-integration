@@ -1,5 +1,4 @@
 const express = require('express');
-const setLoginStatus = require('./middleware/setLoginStatus.js');
 const authRouter = require('./routes/authRouter.js');
 const secretsRouter = require('./routes/secretsRouter.js');
 const todoRouter = require('./routes/todoRouter.js');

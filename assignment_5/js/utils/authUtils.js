@@ -15,15 +15,11 @@ module.exports.comparePassword = (password, hash) => {
 
 module.exports.getJWTToken = (account) => {
     const userData = { userId: account.id, username: account.username }
-    console.log('HELLO')
-    console.log(process.env.JWT_SECRET)
     const accessToken = jwt.sign(userData, process.env.JWT_SECRET)
     return accessToken
 }
 
 module.exports.verifyJWT = (token) => {
-    console.log('HELLO')
-    console.log(process.env.JWT_SECRET)
     return jwt.verify(token, process.env.JWT_SECRET)
 }
 
