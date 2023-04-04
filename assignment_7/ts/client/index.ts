@@ -10,7 +10,7 @@ ProductsCLient.getAllProducts()
 ProductsCLient.getProductById(1)
 ProductsCLient.getProductById(2)
 
-ProductsCLient.updateProduct({ id: 1, name: "Nope", price: 3000 })
+ProductsCLient.updateProduct({ id: 1, name: "Banana", price: 9000 })
 ProductsCLient.deleteProduct(2)
 ProductsCLient.getAllProducts()
 
