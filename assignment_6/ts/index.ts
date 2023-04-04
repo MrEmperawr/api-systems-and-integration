@@ -13,7 +13,7 @@ app.use('/posts', postsRouter)
 app.use('/users', usersRouter)
 
 app.get('/', (req, res) => {
-    res.send("JsonPlaceholder tutorial!")
+    res.send("JsonPlaceholder integration!")
 })
 
 app.listen(8008, () => {
