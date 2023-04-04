@@ -9,7 +9,7 @@ export class JsonPlaceholderClient {
 
     constructor() {
         this.baseUrl = 'https://jsonplaceholder.typicode.com';
-        console.log(this.baseUrl)
+
     }
 
     public async getPosts(): Promise<Post[]> {
@@ -38,6 +38,7 @@ export class JsonPlaceholderClient {
 
     public async getUsers(): Promise<User[]> {
         const response: AxiosResponse<User[]> = await axios.get(`${this.baseUrl}/users`);
+        console.log(response.data)
         return response.data;
     }
 

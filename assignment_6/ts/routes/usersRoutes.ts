@@ -4,12 +4,14 @@ import { PostsController } from "../controllers/PostsController"
 import { UsersController } from "../controllers/UsersController"
 
 const usersRouter = express.Router()
-const usersController = new UsersController()
 
-usersRouter.get("/", usersController.getAllUsers)
-usersRouter.get("/:id", usersController.getUserById)
-usersRouter.post("/", usersController.createUser)
-usersRouter.put("/:id", usersController.updateUser)
-usersRouter.delete("/:id", usersController.deleteUser)
+const client = new JsonPlaceholderClient()
+const usersController = new UsersController(client)
+
+usersRouter.get("/", usersController.getAllUsers.bind(usersController)) // This so dumb I can't even... Why are you the way you are TS?
+usersRouter.get("/:id", usersController.getUserById.bind(usersController))
+usersRouter.post("/", usersController.createUser.bind(usersController))
+usersRouter.put("/:id", usersController.updateUser.bind(usersController))
+usersRouter.delete("/:id", usersController.deleteUser.bind(usersController))
 
 export default usersRouter

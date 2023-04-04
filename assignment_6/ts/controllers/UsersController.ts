@@ -5,8 +5,8 @@ import { User } from '../models/users';
 export class UsersController {
     private client: JsonPlaceholderClient;
 
-    constructor() {
-        this.client = new JsonPlaceholderClient();
+    constructor(client: JsonPlaceholderClient) {
+        this.client = client;
     }
 
     public async getAllUsers(req: Request, res: Response): Promise<void> {
