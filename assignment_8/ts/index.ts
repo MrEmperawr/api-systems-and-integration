@@ -6,7 +6,6 @@ import { createPlanetsRouter } from "./routes/planetsRouter";
 
 const app = express()
 
-
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
