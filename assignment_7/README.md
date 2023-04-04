@@ -12,9 +12,9 @@ Ni ska skapa en klient och en server som kan prata med varandra. Detta repo är 
         i. Id (number)
         ii. Name (text)
         iii. Price (number)
-3. Lägg till alla CRUD-operationer i APIet för kunder
-4. Skapa ett nytt klient-projekt som skapar en kund, hämtar alla kunder, och uppdaterar namnet på
-den första kunden.
+3. Lägg till alla CRUD-operationer i APIet för produkter
+4. Skapa ett nytt klient-projekt som skapar en produkter, hämtar alla produkter, och uppdaterar namnet på
+den första produkten.
 
 ## Bonus round!
 
