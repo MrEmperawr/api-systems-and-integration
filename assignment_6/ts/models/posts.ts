@@ -10,9 +10,3 @@ export interface PostData {
     title: string;
     body: string;
 }
-
-export interface PartialPost {
-    userId: number;
-    title: string;
-    body: string;
-}
