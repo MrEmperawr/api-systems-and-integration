@@ -9,6 +9,14 @@ Som ni har sett så finns det många olika CMS. Många nyare CMS använder Graph
 
 Strapi håller sig till REST-arkitektur och är ett väldigt vanligt verktyg som används där ute i det vilda.
 
+***OBS!!!***
+Skulle du när du kör igång axios eller dyl för att hämta data från strapi och få detta: `ECONNREFUSED ::1:1337`
+För att lösa detta kan du göra följande:
+1. Kör `sudo nano /etc/hosts`
+2. Gå ned till raden där du ser `::1 localhost` och ta bort den.
+3. Spara filen och starta om strapi-serven!
+
+
 Instruktioner:
 
 1. Installera en lokal version av STRAPI på din dator (se lektion 9)
