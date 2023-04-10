@@ -1,0 +1,19 @@
+{
+  "name": "assignment_9",
+  "version": "1.0.0",
+  "description": "Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer. ## STRAPI",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.3.5"
+  }
+}
