@@ -2,12 +2,13 @@ import { getTodo, getTodos } from "./apiClient"
 
 
 async function main() {
-    const todos = getTodos()
-    const todo = getTodo(1)
+    const todos = await getTodos()
+    const todo = await getTodo(1)
 
-    console.log(todos)
+    console.log(todos.data)
     console.log('------------------------------------------------')
-    console.log(todo)
+    console.log('------------------------------------------------')
+    console.log(todo.data)
 }
 
 main()
