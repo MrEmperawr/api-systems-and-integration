@@ -3,7 +3,7 @@
 Installera `ts-node` för att kunna köra ts-node istället för node för ts-filer.
 ## STRAPI
 
-Nu ska vi börja jobba med Wordpress, främst som vårt CMS (Content Management System).
+Nu ska vi börja jobba med Strapi, främst som vårt CMS (Content Management System).
 
 Som ni har sett så finns det många olika CMS. Många nyare CMS använder GraphQL såsom Contentful eller Hygraph och fungerar inte exakt likadant som ett typiskt REST-API.
 
