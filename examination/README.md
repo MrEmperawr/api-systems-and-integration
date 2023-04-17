@@ -18,7 +18,7 @@ Ditt eget API som anropar Strapi kan du döpa till vad du vill men vi kommer ref
 
 Som konsument av Elektronik-APIet ska man kunna göra GET, POST, PUT och DELETE för varje resurs.
 
-### För VG:
+###För VG:
 
 För att uppnå högre betyg ska du även skapa en databas för din egen server som lagrar användare och autentiseringsinformation. När användaren har registrerat sig ska deras användarnamn och lösenord sparas i databasen.
 
