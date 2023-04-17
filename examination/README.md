@@ -4,7 +4,7 @@ Ditt uppdrag är att bygga ett API i Node med Express och integrera det med Stra
 
 ***computer:*** namn (text), beskrivning (text), tillverkare (text), pris (float) och processor (text)
 ***mobile:*** namn (text), beskrivning (text), tillverkare (text), pris (float) och skärmtyp (text)
-***audio:*** namn (text), beskrivning (text), tillverkare (text), pris (float) och effekt (integer)
+***audio_device:*** namn (text), beskrivning (text), tillverkare (text), pris (float) och effekt (integer)
 ***television:*** namn (text), beskrivning (text), tillverkare (text), pris (float) och skärmstorlek (integer)
 
 Du behöver sedan skapa några produkter i varje samling, det räcker med 1-4 i varje.
