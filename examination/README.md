@@ -50,3 +50,7 @@ Så projekstrukturen kan se ut så här:
 -/strapi
 
 Lägg upp din kod i ett github-repo och länka till den när du lämnar in uppgiften.
+
+Slutligen ska du inkludera en README.md där du berättar för mig, steg för steg hur jag använder ert projekt.
+
+Har ni implementerat autentisering får ni berätta hur jag autentiserar mig, t.ex. via en JWT som jag får återanvända mig av i alla Postman-anrop.
