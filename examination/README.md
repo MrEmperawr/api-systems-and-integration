@@ -31,6 +31,8 @@ När man registrerar sig räcker det med "user_name" och "password" som fält.
 
 Skapa ett middleware som kollar om en användare är inloggad, om den inte är det så ska APIet svara med en status som berättar för klienten att anropet inte är tillåtet utan autentisering. Som konsument av Elektronik-APIet ska jag kunna göra GET utan att ha loggat in, men alla andra operationer ska låsas bakom autentisering. Enbart inloggade användare ska alltså kunna göra en POST, PUT eller DELETE.
 
+För uppgiften räcker det med att göra dina Strapi collections publika, du behöver ***inte*** implementera autentisering via Strapi-API:et det räcker med autentisering via ditt API.
+
 Inför inlämningen:
 
 Skriv din kod med hjälp av Express (det är valfritt att köra JS eller TS), om du använder en databaslösning för någon del av uppgiften ska du använda SQLite.
