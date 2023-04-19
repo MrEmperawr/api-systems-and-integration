@@ -9,8 +9,8 @@ export class SwapiController {
     }
 
     public async getAllPeople(req: Request, res: Response): Promise<void> {
-        console.log("hello")
-        const people = await this.client.getPeople();
+        const pageNo = this.checkForPageParam(req)
+        const people = await this.client.getPeople(pageNo);
         res.json(people);
     }
 
@@ -21,7 +21,8 @@ export class SwapiController {
     }
 
     public async getAllPlanets(req: Request, res: Response): Promise<void> {
-        const planets = await this.client.getPlanets();
+        const pageNo = this.checkForPageParam(req)
+        const planets = await this.client.getPlanets(pageNo);
         res.json(planets);
     }
 
@@ -32,7 +33,8 @@ export class SwapiController {
     }
 
     public async getAllFilms(req: Request, res: Response): Promise<void> {
-        const films = await this.client.getFilms();
+        const pageNo = this.checkForPageParam(req)
+        const films = await this.client.getFilms(pageNo);
         res.json(films);
     }
 
@@ -40,5 +42,13 @@ export class SwapiController {
         const id = Number(req.params.id);
         const film = await this.client.getFilmById(id);
         res.json(film);
+    }
+
+    private checkForPageParam(req: Request) {
+        let pageNo;
+        if (req.query) {
+            pageNo = req.query.page
+        }
+        return pageNo;
     }
 }
